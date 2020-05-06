@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Titulo do site-->
+    <title>Chinese Hunger</title>
+       <!--ERRO NESSA PARTE-->
+    
+       
+		<script type="text/javascript" src="JS/jquery-3.4.0.min.js"></script>
+		<script type="text/javascript" src="JS/jquery.mask.min.js"></script>	
+		<script type="text/javascript">
+		$(document).ready(function(){
+            $("#telefone").mask("(00) 0000-0000")
+        });
+        </script>
+ 
+</head>
+
+<body>
+  
+    <header class="principal">         
+        <main>
+        <!-- Parte que configuram o topo da pagina-->
+            <div class="header-1">
+                <div class="logo">
+                    <img src="IMG/logo.png" width="60" height="60">
+                </div>
+
+                <div class="cabeca">
+                    <img src="IMG/cabeça.png" width="300" height="60">
+                </div>
+                
+                <div class="redes_sociais">
+                    <ul>
+                        <li><a href="https://www.facebook.com/"target="_blank"> <img src="img/facebook.png" width="25" height="25"> </a></li>
+                        <li><a href="https://www.instagram.com/"target="_blank"> <img src="IMG/instagram.png" width="25" height="25"> </a></li>
+                    </ul>
+                </div>
+            </div>  
+        </main> 
+  
+    </header> 
+    
+        <!-- Menu de opções -->         
+    <main class="col-100">
+        <div class="header-2">
+             <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Sobre_Site.html">Sobre nós</a></li>
+                    <li><a href="galeria.html">Galeria de Produtos</a></li>
+                    <li><a href="formulario.html">Formulário de Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>  
+    <div class="corpo">
+            <form id="formulario" autocomplete="off">
+                <fieldset>
+                    <legend>Formulário</legend>
+                    <label>Nome: </label><input type="text" placeholder="Ex: Zé da Silva"  maxlength="30" autocomplete="off"><br>
+                    <label>Email: </label><input type="text" placeholder="Ex: ze@hotmail.com"  maxlength="30" autocomplete="off"><br>
+                    <label>Telefone: </label><input type="text" id="telefone" placeholder="Ex: (88)9999-9999" /><br>
+                    <label>Mensagem: </label><br><textarea cols="35" rows="8"></textarea><br>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        
+    </div>        
+    <main>
+            <center>
+                <div class="rodape">
+                    <h4>Fundação: 01 de Março de 2019</h4>
+                    <h4>Wallesson Cavalcante da Silva - (88)9.9900-6040</h4>
+                </div>
+            </center>
+        </main>
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="CSS/responsivo.css">
+</body>
+</html>

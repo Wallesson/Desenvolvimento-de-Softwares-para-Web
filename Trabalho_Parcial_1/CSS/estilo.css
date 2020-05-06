@@ -1,0 +1,104 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+ul{
+    padding: 0px!important;
+}
+
+
+.header-1{
+    width: 100%;
+    background-color: #dbd800;
+    height: 85px;
+    border-bottom: 3px solid #000000;
+    border-top: 3px solid #000000;
+}
+
+main{
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}
+
+.logo{
+    padding: 15px;
+    width: 30%;
+    float: left;
+}
+.cabeca{
+    padding: 15px;
+    width: 50%;
+    float: left;
+
+}
+.redes_sociais ul li{
+    margin-left: 20px;
+    display: inline-block;
+    float: left;
+    list-style: none;
+}
+.redes_sociais{
+    width: 10%;
+    float: right; 
+}
+.header-2{
+    background-color: #c71010;
+    width: 970px;
+    margin: 0 auto;
+    border-bottom: 3px solid #000000;
+    border-top: 3px solid #000000;
+    padding: 5px;
+}
+
+.menu{
+	width:100%;
+	display:block;
+	clear:both;
+}
+
+.menu ul li { 
+    display: inline-block; 
+    color: #070707;
+    margin-left: 10px;
+}
+
+.menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;     
+}
+
+
+.menu ul li a:hover {
+    background-color:#ffffff; 
+    color: #000000;
+}
+
+
+.col-100{
+    width: 100%;
+    float: left;
+}
+
+.corpo{
+    margin: 0 auto;
+    width: 980px;
+    padding: 0 auto;
+}
+.oculta { display:none; }
+
+.rodape{
+   height: 75px;
+    width: 970px;
+    /*float: left;*/
+    padding: 5px;
+    margin: 10px auto 10px auto;
+    text-align-last: center;
+    border-bottom: 3px solid #000000;
+    background-color:  #c71010;
+    border-top: 3px solid #000000; 
+}
