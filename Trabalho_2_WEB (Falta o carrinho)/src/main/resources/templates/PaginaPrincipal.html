@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+
+<title>Ô CHINÊS</title>
+</head>
+<body>
+    <header class="principal">         
+    
+        <!-- Parte que configuram o topo da pagina-->
+            <div class="header-1">
+            </div>  
+        </main> 
+  
+    </header> 
+    <div class="corpo">                    
+	<!--<table class="table table-hover table-dark">
+		  <thead>
+		    <tr>
+		      <th scope="col">Código</th>
+		      <th scope="col">Prato</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		     <tr th:each = "pessoa : ${listaPessoa}">
+		      <td th:text="${pessoa.codigo}"></td>
+
+		  	  <td ><a class="btn btn-danger" th:href="@{/pessoa/excluirPessoa/{codigo}(codigo = ${pessoa.codigo})}">Excluir</a></td>
+		    </tr>
+		 sec:authorize="hasRole('ROLE_ADMIN')" 
+	 
+		  </tbody>
+		</table>-->
+		<table class="table table-hover table-dark">
+		  <thead>
+		    <tr>
+		      <th scope="col">Código</th>
+		      <th scope="col">Nome</th>
+		      <th scope="col">Preço</th>
+		      <th scope="col">Prato</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		     <tr th:each = "prato : ${listaPratos}">
+		      <td th:text="${prato.codigoPrato}"></td>
+		      <td th:text="${prato.nomePrato}"></td>
+		      <td th:text="${prato.precoPrato}"></td>
+		      <td><img width="100" heigth="100" th:src="@{'/images/'+${prato.nomePrato}+.png}"/></td>
+		      <td><a class="btn btn-danger" th:href="@{/pessoa/logar}">Comprar</a></td>
+		  	  <td sec:authorize="hasRole('ROLE_ADMIN')"><a class="btn btn-danger" th:href="@{/pessoa/excluirPrato/{codigo}(codigo = ${prato.codigoPrato})}">Excluir</a></td>
+		    </tr>
+		<!-- sec:authorize="hasRole('ROLE_ADMIN')" -->
+	 
+		  </tbody>
+		</table>
+				
+		<table>
+			  <td sec:authorize="hasRole('ROLE_ADMIN')"><a href="/pessoa/salvarp"><button>CADASTRAR PRATO</button></a></td> 
+   		      <td><a class="btn btn-danger" th:href="@{/pessoa/logar}">Logar</a></td>
+   		      <td><a class="btn btn-danger" th:href="@{/pessoa/formulario}">Cadastrar Pessoa</a></td>
+   		</table>
+    </div>
+  
+  
+
+  <main>
+        <center>
+            <div class="rodape">
+                <h4>Fundação: 01 de Março de 2019</h4>
+                <h4>Wallesson Cavalcante da Silva - (88)9.9900-6040</h4>
+            </div>
+        </center>
+    </main>
+
+
+
+
+
+	<script src="/js/bootstrap.min.js"> </script>
+
+</body>
+</html>
